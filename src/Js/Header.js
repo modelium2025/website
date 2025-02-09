@@ -15,7 +15,7 @@ function Header() {
           <a className="PageLink" href="#about">About Us</a>
           <a className='PageLink' href="#do">What We Do</a>
           <Link className='PageLink' to="/gallery">Gallery</Link>
-          <Link className='PageLink'>Contact Us</Link>
+          <a className='PageLink' href="#foot">Contact Us</a>
         </div>
       </div>
     </div>

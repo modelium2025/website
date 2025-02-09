@@ -46,7 +46,7 @@ function Gallery() {
     return (
   <div className="App">
    <HeaderVariant/>
-    <div className='scenes-menu'>
+    <div id="bath" className='scenes-menu'>
       <div className='scenes-content'>
         <div className='scenes-title'>
             <h1>Scenes</h1>

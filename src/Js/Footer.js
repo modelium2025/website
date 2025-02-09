@@ -14,7 +14,7 @@ function Footer() {
         <div className='foot-Section'>
         <img src={agencyImage} alt="Agency" />
         </div>
-        <div className='foot-Section'>
+        <div id='foot' className='foot-Section'>
           <h4>Get in Touch</h4>
           <p>koolimohamedomar@gmail.com</p> <br/>
           <p>+216    99 009 439</p>
