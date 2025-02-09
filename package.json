@@ -1,7 +1,7 @@
 {
   "name": "threejs-react-app",
   "version": "0.1.0",
-  "homepage": "http://modelium2025.github.io/website",
+
   "private": false,
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.2.2",
