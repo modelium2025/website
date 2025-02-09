@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+
+
+
+    .PagesSection{
+        display: flex; /* Enables Flexbox */
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+        width: 95%;
+        margin: -10px;
+
+        height: 30%;
+        color: #CEC5B6;
+        font-family: "FirstFont";
+        font-size: 5px;
+        z-index: -100;
+        border-right: none;
+    }
+    .LogoSection{
+        border: none;
+        width: 100%;
+    }
+    .PagesSection .PageLink{
+        z-index: 0;
+        color: #353c50;
+        margin-right: 100000%;margin-bottom: 10000%;
+        
+    }
+    .PagesSection h2{
+   
+        cursor: default;
+        font-family: "FirstFont";
+        color: #CEC5B6;
+        font-size: 5px;
+        transition: transform 0.2s ease;
+    }
+
+}

@@ -1,0 +1,85 @@
+
+.gallery-menu{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(52, 53, 51);
+    gap: 16px;
+    padding: 2%;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.gallery-content{
+    border: #CEC5B6 solid 2px;
+    background-color: rgb(52, 53, 51);
+    gap: 5%;
+    overflow: hidden;
+    flex: 1 1 calc(45%);
+    flex-direction: column;
+    display: flex;
+    width: 30%;
+    padding: 2%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 6px 5px 33px 7px rgba(0, 0, 0, 0.43);
+    transition: transform 0.2s ease;
+    color: aliceblue;
+    font-family: 'SecondFont';
+    
+    cursor: default;
+}
+
+.gallery-main{
+    box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    display: flex;
+    width:100%;
+    height: 100%;
+    border-top: #CEC5B6 solid 2px;
+}
+.Type{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border: #CEC5B6 solid 2px;
+    width:100%;
+    height: auto;  
+}
+.Type img{
+}
+
+.Type a{
+  text-decoration: none;
+  font-family: 'SecondFont';
+  color: #CEC5B6;
+  transition: transform 0.2s ease;
+}
+
+
+
+.Type:hover{
+    background-color: rgb(0,0,0,0.43);
+}
+.gallery-picture{
+    width:25vw;
+    border: #CEC5B6 solid 2px;
+    height:25vw ;
+    margin: 10% 0%;
+}
+#scenes:hover{
+    content: url('../picture2/ScenesHover.png');
+}
+#objects:hover{
+    content: url('../picture2/ObjectsHover.png');
+}
+#sofas:hover{
+    content: url("../picture2/SofasHover.png")
+}

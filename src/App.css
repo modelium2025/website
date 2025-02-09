@@ -1,0 +1,447 @@
+.App-header {
+  background-color: #CEC5B6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: hidden;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header {
+  position: fixed; /* Keeps the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: #afa99d; /* Background color */
+  color: white; /* White text */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Logo on the left, menu on the right */
+  padding: 10px 5%; /* Responsive padding */
+  z-index: 1000; /* Stays above other content */
+  border-bottom: 5px solid white; /* White strip at the bottom */
+  box-sizing: border-box; /* Ensures consistent width calculations */
+  height: 150px;
+}
+
+.logo {
+  max-height: 200px; /* Scales logo height */
+  max-width: 200px; /* Restrict logo width */
+  margin-left: 0; /* Adjust as needed for spacing */
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.logo img {
+  width: 100%; /* Ensures responsiveness */
+  object-fit: contain; /* Maintain aspect ratio */
+  bottom: 25%;
+  cursor: pointer; /* Interactive feel */
+  transition: transform 0.2s ease; /* Hover effect */
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.menu {
+  display: flex; /* Lay images in a row */
+  gap: 15%; /* Consistent spacing between images */
+  margin-right: 20%; /* Adjust right margin */
+  width: 50%;
+}
+
+.menu img {
+  max-height: 50px; /* Set maximum height for menu images */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure scaling */
+  cursor: pointer; /* Interactive hover */
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.menu img:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px 2%; /* Adjust padding for smaller screens */
+  }
+  .menu {
+    justify-content: center; /* Center menu images */
+    gap: 5%; /* Adjust spacing */
+  }
+  .menu img {
+    max-height: 40px; /* Scale down menu images */
+  }
+}
+/****************************************************Body****************************************************/
+/* Body Layout */
+
+.body {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Align pages in a column */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  overflow-y: scroll;/* Prevent scrolling outside of the pages */
+}
+
+/* Page Layout */
+.page {
+  flex: 1; /* Each page takes up equal space */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Flexbox for centering content */
+  justify-content: flex-end; /* Aligns child elements to the right */
+  align-items: center; /* Center elements vertically */
+  background-color: #CEC5B6; /* Light background color for visibility */
+  box-sizing: border-box; /* Include padding and borders in width/height */  
+  border-top: #ffffff 7px solid ;
+  position: relative;
+}
+.cont1{
+  display: flex;
+  background-color: aqua;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+}
+/*divided the cont1 into 2 sections*/
+/*section1*/
+.section1{
+  position: relative;
+  display: flex;
+  background-color: #CEC5B6;
+  width: 50%;
+  height: 100%;
+
+ }
+ /*the main title of the first section 'the greeting'*/
+ /*positioning the greeting in the centre of the section' and scaling it in .hello the img*/
+.greeting{
+  position:absolute;
+  left: 25%;
+  top: 50%;
+}
+
+.hello{
+  height: auto;
+  width: 75%;
+}
+/*section2*/
+.section2{
+  display: flex;
+  background-color: #CEC5B6;
+  width: 50%;
+  height: 100%;
+  position: relative;
+
+}
+/*sofa is the cover image of section2 */
+.section2 .sofa{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+
+}
+/*mark this and slide the image*/
+.section2 .dotright{
+ position: absolute;
+ z-index: 15;
+ bottom: 10%;
+ left: 1%;
+}
+.slide{
+  width: 75%;
+  height:75%
+}
+
+/*positionsing the right arrow in section2 and right is the image*/
+.section2 .arrowright{
+  position: absolute;
+  z-index: 15;
+  right: 0;
+  top: 50%;
+}
+.right{
+  height: 75%;
+  width: 75%;
+}
+
+/*positioning the left arrow in section1 and left is the image*/
+.section1 .arrowleft{
+  position: absolute;
+  z-index: 15;
+  left: 1%;
+  top: 50%;
+}
+.left{
+  height: 75%;
+  width: 75%;
+}
+/*mark this and slide is the image*/
+.section1 .dotleft{
+  position: absolute;
+  z-index: 15;
+  bottom: 10%;
+  right: 0%;
+ }
+ .slide{
+   width: 75%;
+   height:75%
+ }
+ @media (max-width: 768px) {
+  .section1, .section2 {
+    width: 100%; /* Stack sections vertically on small screens */
+    height: auto;
+  }
+
+  .greeting {
+    left: 50%;
+    top: 50%; /* Adjust positioning for smaller screens */
+    transform: scale(1.5);
+  }
+
+  .arrowleft, .arrowright, .dotleft, .dotright {
+    width: 50px; /* Scale down arrows and dots for smaller screens */
+    height: 50px;
+  }
+
+  .sofa {
+    object-fit: contain; /* Ensure the image scales without cropping */
+  }
+}
+
+.title{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.summary{
+line-height: 1.6;;
+top:15%;
+left: 15%;
+position: absolute;
+}
+.line{
+ position: absolute;
+ height: 70%;
+ background-color: #ffffff;
+ top:20%;
+ left: 10%;
+ width: 3px;
+ align-items: center;
+}
+.ellipse{
+  position: absolute;
+  background-color: #ffffff;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-left: -200%;
+  top:3%
+}
+
+.cont2{
+  display: flex;
+  background-color: aqua;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+}
+
+
+.block-2 {
+  background-color: #CEC5B6; /* Background color */
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Row layout to place items side by side */
+  justify-content: space-between; /* Distribute items with space between */
+  align-items: center; /* Center items vertically */
+  box-sizing: border-box;
+}
+
+.block-2-content {
+  background-color: #CEC5B6; /* Background color for content */
+  width: 50%; /* Take half of the block width */
+  padding: 20px; /* Add padding for spacing */
+  text-align: left; /* Align text to the left */
+  display: flex; /* Flexbox for layout within content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  box-sizing: border-box;
+}
+
+.block-2 .pic {
+  background-color: #CEC5B6; /* Background color for image */
+  width: 50%; /* Take half of the block width */
+  height: 100%; /* Match the height of the parent */
+  box-sizing: border-box;
+}
+
+
+
+.block-3 {
+  background-color: #CEC5B6; /* Background for the section */
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Add some spacing around the content */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Stack title and blocks vertically */
+  align-items: center; /* Center align all items horizontally */
+}
+
+.block-3 h1 {
+  font-size: 2.5rem; /* Title font size */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center; /* Center align the text */
+}
+
+.block-3 .block-row {
+  margin-top:3%;
+  display: flex; /* Use flexbox for the row layout */
+  justify-content: space-around; /* Evenly space out items */
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 100%; /* Full width of the parent container */
+  gap: 20px; /* Add space between the blocks */
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column; /* Stack image and description vertically */
+  align-items: center; /* Center align content */
+  width: 30%; /* Each block takes up 30% of the row width */
+  max-width: 300px; /* Restrict the maximum width */
+  text-align: center; /* Center align text inside the block */
+  box-sizing: border-box;
+}
+
+.blocks img {
+  width: 100%; /* Scale the image to the block width */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid white; /* Optional border for the image */
+  box-shadow: 0px 4px 6px rgba(5, 5, 5, 0.1); /* Optional shadow */
+  transition: transform 0.2s ease;
+}
+.blocks img:hover{
+  transform: scale(1.1);
+}
+
+.blocks h1 {
+  font-size: 1.2rem; /* Smaller font size for the description */
+  margin-top: 10px; /* Space between image and text */
+  color: #ffffff; /* Text color */
+}
+
+
+
+
+/****************************************************Footer****************************************************/
+/* Footer styling */
+.footer {
+  position: fixed; /* Sticks to the bottom */
+  bottom: -50%; /* Slightly hidden at first */
+  left: 0;
+  width: 100%;
+  height: 60%; /* Footer height */
+  background-color: #afa99d; /* Dark background */
+  color: white; /* Text color */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: bottom 0.4s ease; /* Smooth reveal effect */
+  z-index: 1000;
+  border-top: 5px solid white; /* White strip at the bottom */
+}
+.footer:hover {
+  bottom: 0; /* Reveal fully on hover */
+}
+.footer-menu {
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Distribute sections evenly */
+}
+
+.footer-section1 {
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-align content */
+  gap: 15px; /* Space between blocks */
+}
+
+.footer-section1 .block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align logo and slogan block */
+  gap: 25px;
+  margin-top: 10%;
+}
+
+.footer-section1 .socials {
+  display: flex;
+  flex-direction: row; /* Social icons in a row */
+  gap: 10px;
+}
+
+.footer-section2,
+.footer-section3 {
+  margin-top: 3%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  gap: 10%; /* Space between blocks */
+}
+
+.footer-section3 .location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between Tunisia and address */
+}
+.footer-section3 .location img {
+  width: 50%;
+  height: 100px;
+}
+
+.footer img {
+  width: auto; /* Adjust image size */
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.footer img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .footer-menu img {
+    width: 30px; /* Smaller icons for smaller screens */
+    height: 30px;
+  }
+}

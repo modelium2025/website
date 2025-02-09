@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+
+    .Generals {
+     display: flex;
+     align-items: center;
+    }
+    
+    .Box {
+        gap: 2%;
+        width: 90%;
+        padding: 2%;
+        height: 300vh;
+        flex-direction: column;
+        position: relative;
+       
+    }
+    
+    .InsideBox {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 2%;
+        gap: 2%;
+        height: 100%;
+      
+    }
+    
+    .TextBox{
+        cursor: default;
+        box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+        -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+        -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+        background-color: rgba(0, 0, 0, 0.43);
+        margin: 0;
+        display: flex;
+        border: #CEC5B6 solid 2px;
+        width: 100% ;
+        align-items: center;
+        color: aliceblue;
+        justify-content: center;
+        font-family: "SecondFont";
+        cursor: default;
+    }
+    .TextBox h2{
+        cursor: default;
+    
+    }
+    
+    .info-clients{
+        margin: 2%;
+        width: 80%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.43);
+        text-align: center;
+        border: #CEC5B6 solid 3px;
+        color: aliceblue;
+        font-family: 'SecondFont';
+        cursor: default;
+        padding: 2%;
+    }
+    .info-clients:hover{
+        background-color: aliceblue;
+        color: #3f3466;
+    }
+    .BigScreen{
+        width: 70vw;
+        height: 70vw;
+        background-color: aliceblue;
+    
+    
+    }
+    .Icons{ 
+        display: flex;
+        background-color:#ffffff;
+        width: 80%;
+        height: 20vw;
+        align-items: center;
+        align-items: center;
+        padding: 2%;
+        gap:2%;
+        border: #979591 solid 2px;
+        border-radius: 20%;
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    }
+    .Icon1{
+        box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+        -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+        -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+        border-radius: 100%;
+        width: 70%;
+        height: 90%;
+        background-color: #2c2e33;
+        border: #979591 solid 2px;
+    }
+    .Icon1:hover{
+       transform: scale(1.1);
+       background-color: #CEC5B6;
+    }
+}

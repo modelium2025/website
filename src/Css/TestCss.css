@@ -1,0 +1,177 @@
+
+/*Major Sections*/
+body, html {
+    
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0; /* Remove default margins */
+    overflow-y: z;
+    background-color:  rgb(52, 53, 51);
+    scroll-behavior: smooth;  
+  }
+  .background{
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  rgb(52, 53, 51);
+    background-image: url('../picture2/Background.png');
+    background-repeat: no-repeat ;
+    background-size: cover;
+    border: solid 1px #CEC5B6;
+
+    gap: 50px;
+    padding: 2%;
+    overflow-x: hidden;
+    margin: 0;
+  }
+.Mother{
+
+    /* Adjust the scale value to your desired zoom level */
+    transform: scale(0.8);
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  rgba(52, 53, 51, 0.37);
+    gap: 50px;
+    padding: 2%;
+    overflow-x: hidden;
+    margin: 0;
+}
+.PopUp{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.301);
+    display: flex;
+
+    justify-content: center;
+}
+.Info{
+    margin-top: 1%;
+    border: #353c50 solid 2px;
+    background-color: #CEC5B6;
+    border-radius: 2cm;
+    width: 50%;
+    height: 80vh;
+    opacity: 1;
+}
+.BigBox{
+    
+    background-color: #CEC5B6;
+    overflow: hidden;
+    flex: 1 1 calc(45%)  ;
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    border: solid 10px #CEC5B6;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    transition: transform 0.2s ease;
+   
+}
+.BigBox:hover
+{
+    transform: scale(1.005);
+    box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    
+}
+.BigBox h1{
+    font-size: clamp(1px, 5vw, 4rem);
+    z-index: 10;
+    color: white;
+}
+.BigBox .photo{
+    border: solid 10px #CEC5B6;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    border-radius: 10%;
+    object-fit: cover;
+   
+  transition: opacity 1s ease-in-out; /* Adjust duration as needed */
+}
+
+
+.split{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  rgb(52, 53, 51);
+    gap: 16px;
+    padding: 2%;
+    overflow-x: hidden;
+    z-index: -20;
+    transform: scale(0.9); /* Adjust the scale value to your desired zoom level */
+
+}
+
+
+
+
+
+
+
+.Last{
+    transform: scale(0.9); /* Adjust the scale value to your desired zoom level */
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  rgb(52, 53, 51);
+    gap: 16px;
+    padding: 2%;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.GalleryEntery{
+    border: #CEC5B6 solid 2px;
+    background-color:  rgb(52, 53, 51);
+    gap: 5%;
+    overflow: hidden;
+    flex: 1 1 calc(45%);
+    flex-direction: column;
+    display: flex;
+    width: 30%;
+    padding: 2%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 6px 5px 33px 7px rgba(0, 0, 0, 0.43);
+    transition: transform 0.2s ease;
+    color: aliceblue;
+    font-family: 'SecondFont';
+    cursor: default;
+}
+.GalleryButton{
+    width: 25vw;
+    height: 10vh;
+    font-family: 'FirstFont';
+    font-size: 200%;
+    color: #ffffff;
+    border:#CEC5B6 solid 3px;
+    background-color:  rgb(52, 53, 51);
+    box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+}
+.GalleryButton:hover{
+   background-color: #CEC5B6;
+   color: #353c50;
+}
+
+
+
+@media (max-width: 768px) {
+  
+}

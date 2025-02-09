@@ -1,0 +1,87 @@
+
+
+  /*greetingBOX*/
+  .info-about{
+    background-color: rgba(0, 0, 0, 0.43);
+    overflow: hidden;
+    flex: 1 1 calc(45%)  ;
+    flex-direction: column;
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    border: solid 3px #CEC5B6;
+
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    transition: transform 0.2s ease;
+   
+}
+.info-about:hover
+{
+    transform: scale(1.005);
+    box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    
+}
+.info-about h1{
+    font-size: clamp(1px, 5vw, 4rem);
+    z-index: 10;
+    color: white;
+    font-family: 'SecondFont';
+    cursor: default;
+}
+.info-about p{
+   color: white;
+   font-size: clamp(50%,150%,1000%);
+   font-family: 'SecondFont';
+   font-weight: bolder;
+}
+.info-about-column1{
+    flex-direction: column;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    word-wrap: break-word;
+    white-space: normal; /* Wrap text to next line */
+    bottom: 0;
+}
+.info-about-column2{
+    background-color: rgba(0, 0, 0, 0.43);
+    flex-direction: column;
+    display: flex;
+    height: 80%;
+    width: 100%;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    align-items: flex-start;
+    word-wrap: break-word;
+    white-space: normal; 
+    overflow: hidden;
+    text-align: start; 
+    font-size: clamp(1rem, 0.5vw, 3vw); /* Better scaling */
+    
+}
+
+.info-about-column2 .minor {
+    padding: 0 5%; /* Responsive inner padding */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: clamp(0.5rem, 1.5vw, 5vw); /* Better scaling */
+    line-height: 1.4; /* Improved spacing */
+    cursor: default;
+  }
+  .info-about-column2 p{
+
+
+   }
+ 

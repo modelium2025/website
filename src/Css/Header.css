@@ -1,0 +1,101 @@
+
+/*The header*/
+.Head{
+    padding: 2%;
+    width: calc(99% );
+    height:5vh;
+    z-index: 101;
+    padding: 10px;
+    border-bottom: #dbcdb4 solid 2px;
+    background-color:  rgb(2, 2, 2);
+    box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    position: fixed;
+    top: 0; /* Adjust this value to set the distance from the top */
+    display:flex;
+}
+
+.Stick{
+    padding: 2%;
+    width: calc(99% );
+
+    z-index: 100;
+    padding: 10px;
+    background-color:#353c50;
+    border-top-left-radius:1cm;
+    border-top-right-radius:1cm; 
+    position: relative;
+    top: 0; /* Adjust this value to set the distance from the top */
+}
+
+.LogoSection{
+
+    justify-content: baseline;
+    align-content: baseline;
+    color: #CEC5B6;
+    height: 100%;
+    font-family: "FirstFont";
+    color: #CEC5B6;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    padding-left: 5%;
+    width: 40%;
+    display: flex;
+    border-right: solid 2px #CEC5B6 ;
+}
+
+.LogoSection .TitleHome{
+    color: #CEC5B6;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "FirstFont";
+    font-size: xx-large;
+    cursor: default;
+    transition: transform 0.2s ease;
+    justify-content: baseline;
+}
+.LogoSection .TitleHome img{
+    margin-left: -15%;
+    margin-top: -47%;
+    transform: scale(0.4);
+}
+/*.LogoSection .TitleHome img{
+    margin-left: -45%;
+    margin-top: -10.5%;
+    transform: scale(0.2);
+}*/
+.TitleHome:hover{
+ 
+}
+
+.PagesSection{
+    margin-left: 2%;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    display: flex;
+    gap: 10%;
+}
+.PagesSection h2{
+    cursor: default;
+    font-family: "FirstFont";
+    color: #CEC5B6;
+    font-size: 10px;
+    transition: transform 0.2s ease;
+}
+.PagesSection a{
+    cursor: default;
+    font-family: "FirstFont";
+    color: #CEC5B6;
+    font-size: 5px;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    font-weight: bold;
+}
+.PagesSection h2:hover{
+    transform: scale(1.1);
+}
+
+.PagesSection a:hover{
+    transform: scale(1.1);
+}

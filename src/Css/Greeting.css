@@ -1,0 +1,93 @@
+
+/*greetingBOX*/
+.info-greeting{
+    background-color: rgba(0, 0, 0, 0.43);
+    overflow: hidden;
+    flex: 1 1 calc(45%)  ;
+    flex-direction: column;
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    border: solid 3px #CEC5B6;
+
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.43);
+    transition: transform 0.2s ease;
+   
+}
+.info-greeting:hover
+{
+    transform: scale(1.005);
+    box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    -moz-box-shadow: 6px 5px 33px 7px rgba(0,0,0,0.78);
+    
+}
+.info-greeting h1{
+    font-size: clamp(1rem, 4vw, 8vw);
+    z-index: 10;
+    color: white;
+    font-family: "SecondFont";
+    cursor: default;
+}
+.info-greeting p{
+    font-family: "SecondFont";
+    font-weight: bolder;
+   color: white;
+   font-size: clamp(50%,150%,1000%);
+}
+.info-greeting-column1{
+    flex-direction: column;
+    display: flex;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    word-wrap: break-word;
+    white-space: normal; /* Wrap text to next line */
+    bottom: 0;
+}
+.info-greeting-column2{
+
+    flex-direction: column;
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    align-items: center;
+    word-wrap: break-word;
+    white-space: normal; 
+    background-color: rgba(0, 0, 0, 0.43);
+
+
+}
+.info-greeting-column2 .minor {
+    position: relative;
+    text-align: center;
+    
+    width: 100%;
+    height:fit-content;
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Scales dynamically */
+    line-height: 1.5; /* Improves readability */
+    word-wrap: break-word; /* Prevents overflow on long words */
+    overflow-wrap: break-word; /* Alternative for better compatibility */
+    text-overflow: ellipsis; /* Adds '...' if the text overflows */
+    white-space: normal; /* Allows wrapping to next line */
+    cursor: default;
+
+   
+  }
+  .info-greeting-column2 p:hover {
+
+        
+
+  }

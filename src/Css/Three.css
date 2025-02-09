@@ -1,0 +1,6 @@
+.Canvo{
+    height: 50vh;
+    width:50vw;
+    overflow: hidden;
+    z-index: 0;
+}
