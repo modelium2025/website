@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import LoadingScreen from './Loading';
 import TestDrive from './Test';  // Import the LandingPage component
 import '../Css/Loading.css';
-
+import '../Css/Transition.css';
 const loadImages = (context) => {
   return context.keys().map(context);
 };
@@ -42,15 +42,18 @@ const Transition = () => {
   }, [loadedCount, minimumTimeElapsed, navigate]);
 
   return (
-    <div className="app">
+    <div className="pl">
       {loading && (
         <div>
+            <div className="il">
           <LoadingScreen />
-          <p>Loading {loadedCount} of {images.length} images...</p>
-          <p>{Math.round((loadedCount / images.length) * 100)}% completed</p>
+          </div>
+          <div className="il">
+           <p id='n1'>{Math.round((loadedCount / images.length) * 100)}% </p>
+           </div>
         </div>
       )}
-      {!loading && <TestDrive />}  // Render LandingPage after loading is complete
+      {!loading && <TestDrive />} 
     </div>
   );
 };
