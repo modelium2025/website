@@ -19,7 +19,7 @@ function App() {
     <Router>
       <ScrollToTop/>
     <Routes>
-      <Route path="/" element={<TestDrive />} />
+      <Route path="/website" element={<TestDrive />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/Scenes" element={<Scenes />} />
       <Route path="/Objects" element={<Objects />} />
