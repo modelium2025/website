@@ -7,6 +7,8 @@ import Gallery from './Js/Gallery.js';
 import Scenes from './Js/Scenes.js';
 import Objects from './Js/Objects.js';
 import Sofa from './Js/Sofa.js';
+import LoadingScreen from './Js/Loading.js';
+import Transition from './Js/Transition.js';
 
 import ScrollToTop from './Js/ScrollToTop.js';
 
@@ -19,7 +21,8 @@ function App() {
     <Router>
       <ScrollToTop/>
     <Routes>
-      <Route path="/website" element={<TestDrive />} />
+      <Route path="/website" element={<Transition />} />
+      <Route path="/" element={<TestDrive />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/Scenes" element={<Scenes />} />
       <Route path="/Objects" element={<Objects />} />

@@ -9,7 +9,7 @@ function Header() {
       <div className="Stick"></div>
       <div className="Head">
         <div className="LogoSection">
-          <Link className="TitleHome" to="/website"> <img src={agencyImage} alt="Agency" /></Link>
+          <Link className="TitleHome" to="/"> <img src={agencyImage} alt="Agency" /></Link>
         </div>
         <div className="PagesSection">
           <a className="PageLink" href="#about">About Us</a>

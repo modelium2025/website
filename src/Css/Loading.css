@@ -1,0 +1,42 @@
+/* LoadingScreen.css */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(52, 53, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #CEC5B6;
+    font-size: xx-large;
+    font-family: "SecondFont";
+    font-style: bold;
+
+  }
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+    height: 45px;
+    --c:no-repeat linear-gradient(#CEC5B6 0 0);
+    background: 
+      var(--c) left,
+      var(--c) center,
+      var(--c) right;
+    background-size: 16px 100%;
+    animation: 
+      l33-1 1.5s infinite,
+      l33-2 1.5s infinite;
+  }
+  @keyframes l33-1 {
+    0%,100% {width:45px}
+    35%,65% {width:65px}
+  }
+  @keyframes l33-2 {
+    0%,40%  {transform: rotate(0) }
+    60%,100%{transform: rotate(90deg) }
+  }
