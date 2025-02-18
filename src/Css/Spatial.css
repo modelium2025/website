@@ -1,0 +1,7 @@
+.io{
+    height: 100vh;
+    width:100vw;
+    overflow: hidden;
+    z-index: 0;
+    background-color: antiquewhite;
+}

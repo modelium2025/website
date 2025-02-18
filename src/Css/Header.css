@@ -76,7 +76,25 @@
     display: flex;
     gap: 10%;
 }
+.PagesSection .dropdown{
+    
+}
+.dropdown img{
+position: absolute;
+margin-left:-20% ;
+width: 10%;
+height: 100%;
+
+
+    
+}
+
+.PageLink{
+
+}
 .PagesSection h2{
+
+  white-space: nowrap;
     cursor: default;
     font-family: "FirstFont";
     color: #CEC5B6;
@@ -84,6 +102,7 @@
     transition: transform 0.2s ease;
 }
 .PagesSection a{
+    white-space: nowrap;
     cursor: default;
     font-family: "FirstFont";
     color: #CEC5B6;
@@ -91,7 +110,9 @@
     transition: transform 0.2s ease;
     text-decoration: none;
     font-weight: bold;
+    width: 5%;
 }
+
 .PagesSection h2:hover{
     transform: scale(1.1);
 }

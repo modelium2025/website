@@ -2,6 +2,7 @@ import React from 'react';
 import AboutUs from './AboutUs';
 import { Link } from 'react-router-dom';
 import agencyImage from '../picture2/logo.svg';
+import dropdown from '../picture2/dropdown.png';
 
 function Header() {
   return (
@@ -15,6 +16,7 @@ function Header() {
           <a className="PageLink" href="#about">About Us</a>
           <a className='PageLink' href="#do">What We Do</a>
           <Link className='PageLink' to="/gallery">Gallery</Link>
+          <Link className='PageLink' to="/spatial">Spatial</Link>
           <a className='PageLink' href="#foot">Contact Us</a>
         </div>
       </div>

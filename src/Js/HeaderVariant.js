@@ -28,7 +28,7 @@ function HeaderVariant() {
          {/* Left arrow */}
       </button>
         <div className="LogoSectionVariant">
-          <Link className="TitleHome" to="/website">Home</Link>
+          <Link className="TitleHome" to="/">Home</Link>
          
         </div>
       </div>
